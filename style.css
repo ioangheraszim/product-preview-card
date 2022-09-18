@@ -1,0 +1,109 @@
+/* Global variables */
+:root {
+    --dark-cyan: #3c8067;
+    --cream: #f2ebe3;
+    --very-dark-blueish: #1c232b;
+    --dark-gray-blue: #6c7289;
+    --white: #ffffff;
+}
+
+/* Global reset */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+}
+
+.container {
+    border: 1px solid black;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    width: 345px;
+    height: 615px;  
+    border-radius: 20px;   
+}
+
+.top-part .mobile-image img {
+    border-radius: 20px 20px 0px 0px;
+    border-top-right-radius: 20px;
+    width: 100%;    
+}
+
+.top-part .desktop-image {
+    display: none;
+}
+
+.text-part {
+    margin: 20px 30px;    
+}
+
+.text-part .item-type {
+    color: var(--dark-gray-blue);    
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;        
+}
+
+.text-part h1 {
+    color: var(--very-dark-blueish);
+    font-weight: 700;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;    
+}
+
+.text-part p {
+    color: var(--dark-gray-blue);
+    line-height: 1.3rem;
+    font-size: 0.875rem;        
+}
+
+.price-tag {    
+    font-family: 'Fraunces', sans-serif;
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    display: flex;    
+    align-items: center;
+}
+
+.price-tag span {
+    font-size: 0.8rem;    
+    align-items: center;
+    color: var(--dark-gray-blue);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    margin: 20px 90px 20px 20px;
+       
+}
+
+button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 85%;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: 15px;    
+}
+
+button img {
+    margin-right: 10px;
+}
+
